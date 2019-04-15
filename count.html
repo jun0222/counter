@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>count</title>
+    <script type="text/javascript">
+      var $count = 0;
+      function countUp() {
+        document.getElementById("num").innerHTML = ++$count;
+      }
+      function countDown() {
+        document.getElementById("num").innerHTML = --$count;
+      }
+    </script>
+  </head>
+  <body>
+      <section class="counter">
+        <div class="buttons">
+          <button onclick="countUp();">+</button>
+          <button onclick="countDown();">-</button>
+        </div>
+        <p><span id="num">0</span>回</p>
+      </section>
+  </body>
+</html>
+
+<style>
+  button{
+    font-size: 100px;
+    height: 150px;
+    width: 200px;
+    float: left;
+  }
+  .buttons{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+  #num{
+    font-size: 50px;
+    width: 50px;
+    height: 50px;
+  }
+  p{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+  }
+</style>
